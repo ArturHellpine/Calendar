@@ -17,13 +17,13 @@ const Navbar: FC = () => {
                     <>
                         <div style={{color: 'white'}}>{user.username}</div>
                         <Menu theme='dark' mode='horizontal' selectable={false}>
-                            <Menu.Item key={1} onClick={logout}>Exit</Menu.Item>
+                            <Menu.Item key={1} onClick={logout}>Вихід</Menu.Item>
                         </Menu>
                     </>
                     :
                     <>
                         <Menu theme='dark' mode='horizontal' selectable={false}>
-                            <Menu.Item key={1} onClick={() => router(RouteNames.LOGIN)}>Login</Menu.Item>
+                            <Menu.Item key={1} onClick={() => router(RouteNames.LOGIN)}>Вхід</Menu.Item>
                         </Menu>
                     </>
                 }

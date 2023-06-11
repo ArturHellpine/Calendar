@@ -16,11 +16,11 @@ const LoginForm: FC = () => {
         <Form onFinish={submit}>
             {error && <div style={{color: 'red'}}>{error}</div>}
             <Form.Item
-                label="Імя користувача"
+                label="Ім’я користувача"
                 name="username"
-                rules={[rules.required('Введіть імя користувача')]}
+                rules={[rules.required('Введіть ім’я користувача')]}
             >
-                <Input placeholder='user / admin / artur' value={username} onChange={e => setUsername(e.target.value)} />
+                <Input placeholder='Ім’я користувача' value={username} onChange={e => setUsername(e.target.value)} />
             </Form.Item>
 
             <Form.Item
@@ -28,7 +28,7 @@ const LoginForm: FC = () => {
                 name="password"
                 rules={[rules.required('Введіть пароль')]}
             >
-                <Input type='password' placeholder='123' value={password} onChange={e => setPassword(e.target.value)} />
+                <Input type='password' placeholder='Пароль' value={password} onChange={e => setPassword(e.target.value)} />
             </Form.Item>
 
             <Form.Item>
